@@ -1,0 +1,190 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("src/ofont.ru_AV Fontimer.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("src/img/6.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+}
+
+.container .navbar-menu li {
+    font-family: "CustomFont", sans-serif;
+    list-style-type: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    padding: 12px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.container .navbar-menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.navbar-wrap {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-wrap h1 {
+    color: #516e7b;
+    text-align: center;
+}
+
+.container {
+    font-family: "CustomFont", sans-serif;
+    font-size: 15px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .navbar-menu li {
+    font-family: "CustomFont", sans-serif;
+    list-style-type: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    padding: 12px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.navbar-wrap {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-wrap h2 {
+    color: #516e7b;
+}
+
+.content {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+}
+
+.cardOne {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 19px;
+    width: 400px;
+    height: 300px;
+    padding: 15px;
+}
+
+.cardTwo {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 19px;
+    width: 400px;
+    height: 250px;
+    padding: 15px;
+}
+
+.cardTh {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 19px;
+    width: auto;
+    height: 400px;
+    padding: 15px;
+}
+
+.cardFr {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 19px;
+    width: auto;
+    height: 300px;
+    padding: 15px;
+}
+
+.cardFv {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 19px;
+    width: auto;
+    height: 220px;
+    padding: 15px;
+}
+
+.plan-fact-bar {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: flex-end;
+    height: 100px;
+    width: 150px;
+}
+
+.bar {
+    width: 40%;
+    margin: 0 5px;
+    background-color: limegreen;
+    text-align: center;
+    color: white;
+}
+
+.bar.plan {
+    height: 75%;
+}
+
+.bar.fact {
+    height: 100%;
+}
+
+.high-load {
+    color: red;
+    font-weight: bold;
+}
+
+.low-load {
+    color: green;
+    font-weight: bold;
+}
+
+.highTime {
+    color: red;
+    font-weight: bold;
+}
+
+.timeTz {
+    padding: 10px;
+}
+
+.lowTime {
+    color: green;
+    font-weight: bold;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tax-table li,
+.info-list li {
+    display: flex;
+    justify-content: space-between;
+}

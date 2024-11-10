@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шерегеш Dashboard</title>
+    <link rel="stylesheet" href="static\style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-wrap">
+            <h1>ШЕРЕГЕШ</h1>
+            <ui class="navbar-menu">
+                <li><a href="#">Дашборд</a></li>
+                <li><a href="#">Инвесторы</a></li>
+                <li><a href="#">Инфоструктура</a></li>
+                <li><a href="static\index2.html">Проблемы</a></li>
+                <form class="d-inline-block" style="max-width: 33%;" , action="{{ url_for('add_event') }}" method="POST">
+                    <input type="text" name="searchMenu" class="form-control" placeholder="Задайте вопрос">
+                    <button type="submit" class="btn btn-primary">Решение</button>
+                </form>
+                <p>{{h1}}</p>
+            </ui>
+        </div>
+
+        <div class="content">
+            <div class="cardOne">
+                <h2>Посетителей по бонусной программе:
+                    <p>План/факт</p>
+                    <p>100/135 тыс.чел</p>
+
+                </h2>
+                <div class="plan-fact-bar">
+                    <div class="bar plan">
+                        <p>ПЛАН</p>
+                    </div>
+                    <div class="bar fact">
+                        <p>ФАКТ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardTwo">
+                <h3>Загруженность подъемников: <br>
+                    сегодня
+                </h3>
+                <p><span class="high-load">12:00 13:00</span><span>/</span><span class="low-load">9:00 10:00</span></p>
+                <p><span class="high-load">15:00 16:00</span><span>/</span><span class="low-load">11:00 17:00</span></p>
+                <p class="timeTz"><span class="highTime">Высокая</span><span>/</span><span class="lowTime">Низкая</span>
+                </p>
+            </div>
+            <div class="cardTh">
+                <h2>Турпоток:</h2>
+                <p>План/факт</p>
+                <img src="static/src/img/plot.png" alt="">
+            </div>
+
+            <div class="cardFr">
+                <h1>Налоговые поступления: <br>
+                    <h2>декабрь-январь</h2>
+                </h1>
+                <ul class="tax-table">
+                    <li><span>НДС:</span><span>15 млн.руб</span></li>
+                    <li><span>Налог на прибыль организаций:</span><span>10 млн.руб</span></li>
+                    <li><span>Налог на имущество:</span><span>5 млн.руб</span></li>
+                    <li><span>НДФЛ:</span><span>8 млн.руб</span></li>
+                    <li><span>Туристический налог:</span><span>3 млн.руб</span></li>
+                </ul>
+            </div>
+
+            <div class="cardFv" style="grid-column: span 2;">
+                <h2>Информация о натуральных показателях эффективности работы ГЛК:</h2>
+                <ul class="info-list">
+                    <li><span>Количество посетителей за сезон:</span><span>150 тыс.чел.</span></li>
+                    <li><span>Объем продаж в гостиницах и ресторанах:</span><span>50 млн.руб</span></li>
+                    <li><span>Протяженность горнолыжных трасс:</span><span>30 км</span></li>
+                    <li><span>Количество проведенных мероприятий:</span><span>10</span></li>
+                    <li><span>Общее количество подъемников:</span><span>7</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

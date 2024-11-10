@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Щерегеш Problems</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-wrap">
+            <h1>ШЕРЕГЕШ</h1>
+            <ui class="navbar-menu">
+                <li><a href="/">Дашборд</a></li>
+                <li><a href="#">Инвесторы</a></li>
+                <li><a href="#">Инфоструктура</a></li>
+                <form class="d-inline-block" style="max-width: 33%;", action="{{ url_for('get_page_about2') }}" method="POST">
+                    <input type="text" name="searchMenu2" class="form-control" placeholder="Название события">
+                    <button type="submit" class="btn btn-primary">Поиск</button>
+                </form>
+                <p>{{h1}}</p>
+            </ui>
+        </div>
+
+</body>
+
+</html>

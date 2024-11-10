@@ -1,1 +1,1 @@
-
+Для работы надо установить библеотеки Flask, flask_bootstrap и flask_sqlalchemy. Потом установить приложение ollama. Открыть powerchell и прописать там комманду ollama run llama 3.2 и подождать установку. Теперь можно запустить Untitled-1.py.
